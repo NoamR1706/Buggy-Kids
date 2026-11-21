@@ -1,0 +1,30 @@
+# Decap CMS – owner editing page. Replace NoamR1706/Buggy-Kids below with the GitHub repo.
+backend:
+  name: github
+  repo: NoamR1706/Buggy-Kids
+  branch: main
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+locale: "he"
+
+collections:
+  - name: "activities"
+    label: "פעילויות באתר"
+    files:
+      - name: "list"
+        label: "רשימת הפעילויות הנוספות"
+        file: "content/activities.json"
+        fields:
+          - label: "פעילויות"
+            name: "items"
+            widget: "list"
+            label_singular: "פעילות"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "שם הפעילות", name: "title", widget: "string" }
+              - { label: "תיאור", name: "text", widget: "text", hint: "שורה ריקה מפרידה בין פסקאות" }
+              - { label: "תמונה", name: "image", widget: "image", required: false }
+              - { label: "גילאים", name: "age", widget: "string", required: false, hint: "למשל 3–6" }
+              - { label: "מחיר (מספר בלבד)", name: "price", widget: "string", required: false }
+              - { label: "הערה למחיר", name: "price_note", widget: "string", required: false, hint: "למשל: לחצי שעה" }
