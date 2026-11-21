@@ -1,11 +1,12 @@
 {
   "items": [
     {
-      "title": "פעילות בדיקה",
-      "text": "זו פעילות לבדיקת מערכת העריכה.",
-      "age": "3–6",
-      "price": "50",
-      "image": "/img/uploads/screenshot-222-.png"
+      "title": "סקי באוסטריה",
+      "text": "היידההה סולקים ",
+      "age": "18-21",
+      "price": "200",
+      "image": "/img/uploads/screenshot-222-.png",
+      "price_note": "לא כולל משיכה "
     },
     {
       "title": "לגדולים",
